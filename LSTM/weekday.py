@@ -1,6 +1,3 @@
-# 전체 데이터 학습
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -117,8 +114,7 @@ def predictions_plot(preds):
     mse.update_state(np.array(predictions_plot['JM1_p']), np.array(predictions_plot['result']))
 
     return (mse.result().numpy(), predictions_plot.plot(figsize=(40, 10)))
-
-
+    
 #1주일 -> 1주일 (24 * 5)
 time_steps = 120
 for_periods = 120
